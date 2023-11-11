@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green tea</title>
+    <style>
+			 body {
+       background-image: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+       color: white;
+       display: block;
+       box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+       width: 50%;
+       margin: 30px auto;
+       padding: 30px 30px;
+       border-radius: 10px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+     h1 {
+        text-align: center;
+        border: 1px solid #B4E639;
+        padding: 20px;
+        font-size: 2em;
+        border-radius: 20px;
+     }
+     h2 {
+        text-align: center;
+     }
+		 img {
+			display: block;
+			margin: 0 auto;
+			max-width: 60%;
+			border-radius: 20px;
+			
+		 }
+		p {
+			line-height: 1.5;
+			font-size: 25px;
+			margin: 20px 0 10px;
+
+		}
+
+		button {
+			display: block;
+			margin: 0 auto;
+			font-size: 13px;
+			background-color: #B4E639;
+			color: white;
+			font-size: 30px;
+			padding: 20px 30px;
+			border-radius: 10px;
+			border: none;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+			transition: transform 0.3s, background-color 0.3, color 0.3;
+		}
+		.content {
+			max-width: 600;
+
+		}
+		button:hover{
+			opacity: 0.9;
+			cursor: pointer;
+			transform: translateY(-10px);
+		}
+
+		 .read-more{
+			display: block;
+			margin: 0 auto;
+			text-decoration: none;
+			color:#B4E639;
+			font-size: 15px;
+			padding: 0px;
+		 }
+
+		 .read-more:hover {
+			text-decoration: underline;
+			opacity: 0.9;
+			cursor: pointer;
+		 }
+
+		 .footer {
+			text-align: center;
+			font-size: 15px;
+			color: #B4E639;
+			font-weight:300;
+		 }
+		</style>
+		</head>
+    <body>
+		<div class="content">
+    <h1>I love matcha tea !</h1>
+    <h2>Matcha latte is one of my favorite</h2>
+    <hr>
+    <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/096/original/AdobeStock_139297422.jpg?1699209510"
+    alt="Matcha tea"
+      </hr>
+  </img>
+	<br/>
+  <p>
+		<center>
+		<strong>Matcha[a] (抹茶, English: /ˈmætʃə, ˈmɑːtʃə/;[1][2])</strong>
+    is finely ground powder of specially grown 
+    and processed green tea leaves originating in China 
+    traditionally consumed in East Asia. It is 
+    mostly produced in Japan today.[3] The green tea plants 
+    used for matcha are shade-grown for three 
+    to four weeks before harvest; the stems and veins 
+    are removed during processing. During shaded growth,
+    the plant Camellia sinensis produces more theanine and caffeine. 
+    The powdered form of matcha is consumed differently from tea leaves 
+    or tea bags, as it is suspended in a liquid, typically water or milk.
+		</center>
+  </p>
+  	<a 
+		href="https://en.wikipedia.org/wiki/Matcha"
+    target="_blank" 
+		class="read-more"
+		>
+    Read more on wikipedia
+    </a>
+    <button class="buy-button">
+    Buy Matcha tea
+    </button>
+  <p class="footer">
+		This page was built by
+    <a href="https://www.linkedin.com/in/haini-i-97098387/" target="_blank">
+    Haini Iq
+    </a>
+		<script>
+			function buy() {
+				let name = prompt("What is your name ?");
+				let likeTea = prompt("Are you matcha lover?");
+				if (likeTea === "yes" || likeTea === "Yes") {
+				alert (
+					"Hi, " + name + " Wooww GREAT you're matcha lover too, KEEP DRINK MATCHA TEA !!😻");
+				} else {
+				alert("Hi, " + name + " aaahhh too bad you don't like it, matcha has great antioxidant🥴");
+				}
+			}
+			let buyButton = document.querySelector(".buy-button");
+			buyButton.addEventListener("click", buy);
+		</script>
+			</p>
+		</div>
+	</body>
+</html>
